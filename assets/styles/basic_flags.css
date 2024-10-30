@@ -1,0 +1,22 @@
+/*Basic style for flags*/
+.switch_lang {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch_lang img {
+  width: 32px;
+}
+.switch_lang a {
+  padding-top: 8px;
+}
+.switch_lang a:hover,
+.switch_lang a:active,
+.switch_lang a:focus,
+.switch_lang a:hover img,
+.switch_lang a:active img,
+.switch_lang a:focus img {
+  background: transparent !important;
+  text-decoration: none !important;
+  outline: none !important;
+}

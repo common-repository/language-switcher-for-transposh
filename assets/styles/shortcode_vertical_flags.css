@@ -1,0 +1,7 @@
+/*Basic style for shortcode for vertical flags*/
+ul#lsft_vertical_flags,
+ul#sh_lsft_vertical_flags{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

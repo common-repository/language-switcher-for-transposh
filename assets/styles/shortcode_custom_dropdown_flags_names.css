@@ -1,0 +1,63 @@
+/*Basic style for shortcode with flags and text*/
+#lsft_custom_dropdown_flags_names,
+#sh_lsft_custom_dropdown_flags_names{
+  list-style-type: none;
+}
+#lsft_custom_dropdown_flags_names:hover #sc_flags_names_submenu,
+#sh_lsft_custom_dropdown_flags_names:hover #sh_sc_flags_names_submenu {
+  /* left: 0 !important; */
+  display: flex;
+}
+
+.stylable-list li{
+    line-height: 32px;
+}
+
+#sc_flags_names_submenu,
+#sh_sc_flags_names_submenu {
+  margin-top: 0 !important;
+  display: none;
+  margin-left: 0 !important;
+  flex-direction: column;
+  list-style-type: none !important;
+  width: auto !important;
+  background-color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+  /* left: -999em !important; */
+  left: 0 !important;
+  position: absolute !important;
+  z-index: 99999 !important;
+  white-space: nowrap !important;
+  padding-left: 1px !important;
+  opacity: 1 !important;
+}
+#sc_flags_names_submenu > li,
+#sh_sc_flags_names_submenu > li {
+  padding-left: 0 !important;
+}
+#sc_flags_names_submenu > li a,
+#sh_sc_flags_names_submenu > li a {
+  display: block;
+}
+
+#lsft_custom_dropdown_flags_names .flag-and-text > a,
+#sh_lsft_custom_dropdown_flags_names .flag-and-text > a {
+  background-size: 32px;
+}
+
+#lsft_custom_dropdown_flags_names .flag-and-text > a,
+#sh_lsft_custom_dropdown_flags_names .flag-and-text > a,
+#lsft_custom_dropdown_flags_names .flag-and-text li:not(.edit_translation) > a,
+#sh_lsft_custom_dropdown_flags_names .flag-and-text li:not(.edit_translation) > a {
+  padding-left: 36px !important;
+  color: inherit !important;
+}
+
+#lsft_custom_dropdown_flags_names .edit_translation {
+  padding: 2px 0 !important;
+  font-weight: bold !important;
+  background: #eee !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+  text-align: center !important;
+}

@@ -1,0 +1,104 @@
+/*Basic style for list*/
+.stylable-list {
+    position: relative;
+    background: white;
+}
+
+.stylable-list li{
+    line-height: 32px;
+}
+
+.stylable-list a:hover,
+.stylable-list a:focus {
+    text-decoration: none !important;
+}
+
+#stylable-list-first-item {
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+#stylable-list-first-item img {
+    width: 32px !important;
+    max-width: 32px !important;
+}
+
+.stylable-list:hover>#lsft-sub-menu,
+#lsft-sub-menu:hover {
+    left: 0 !important;
+}
+
+#lsft-sub-menu {
+    display: flex;
+    margin-left: 0 !important;
+    flex-direction: column;
+    list-style-type: none !important;
+    width: 100% !important;
+    background-color: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    left: -999em !important;
+    position: absolute !important;
+    top: 50px !important;
+    /* top: 4.5em !important; */
+    z-index: 99999 !important;
+    white-space: nowrap !important;
+    padding-left: 1px !important;
+    opacity: 1 !important;
+}
+
+.text-only #lsft-sub-menu li a {
+    padding: 0 1em;
+}
+
+#lsft-sub-menu li {
+    background-color: transparent;
+    width: 100% !important;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+.flag-only #lsft-sub-menu li {
+    padding-left: 17px;
+}
+
+#lsft-sub-menu li a {
+    color: inherit !important;
+    width: 100% !important;
+    padding: 2px 0;
+}
+
+#lsft-sub-menu li a:hover {
+    color: black !important;
+    background-color: transparent !important;
+}
+
+#lsft-sub-menu li a img {
+    color: inherit !important;
+    width: 32px !important;
+}
+
+#lsft-sub-menu>li a span {
+    color: inherit !important;
+}
+
+.flag-only {
+    display: flex !important;
+    justify-content: center !important;
+    width: 50px !important;
+}
+
+.flag-only #lsft-sub-menu li:not(.edit_translation)>a {
+    padding: 4px 0 !important;
+}
+
+.flag-and-text>a{
+    background-size: 32px;
+}
+
+.flag-and-text>a,
+.flag-and-text li:not(.edit_translation)>a {
+    padding-left: 36px !important;
+    color: inherit !important;
+}
+
